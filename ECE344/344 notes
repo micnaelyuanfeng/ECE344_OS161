@@ -1,0 +1,31 @@
+kern/dev: This is where all the low level device management code is stored. You can safely ignore most of this directory.
+
+Question 3:
+
+Question 4:
+LAMEbus from kern/arch/mips/include/bus.h
+so whats relationship with course.
+
+Question 5;
+The old interrupt state
+from kern/arch/mips/mips/spl.c
+spl: interrupt levels or priorities. a variable
+os161 only support 3 levels.
+splhigh() sets spl to the highest value, disable all interrupts
+spl0() sets spl to 0, enable all interrupts
+splx(s)sets spl to s
+
+Question 6 and 7
+int_32 the lenght is fixed as 32 bits.
+register size is 32 bits?
+
+Which register number is used for the stack pointer (sp) in
+OS/161?
+#define sp $29 /* stack pointer */
+from kern/arch/mips/include/asmdefs.h
+
+Question 10
+thread_yield yeild a another thread and itself runnable.
+interrupt must be disabled.
+
+synchro.h function
